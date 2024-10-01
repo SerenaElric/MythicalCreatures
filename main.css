@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url("Images/mythology.jpg");
+	background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+	background-size: 100%
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color:rgba(0,128,255,0.50);}
+h1{
+	font-family: "Old English Text MT";
+	text-align: center;
+	width:600px;
+	height:40px;
+	margin: 10px 10px 10px 100px;
+	padding: 10px;
+	background-color:rgba(65,140,248,0.79);
+	float: left;
+	
+	
+}
+
+h2{
+	font-family:"Copperplate Gothic Bold";
+}
+
+dl {
+  background:rgba(28,177,255,0.73);
+  padding: 20px;
+  
+}
+dl dd {
+  background:rgba(0,104,162,1.00);
+  color: white;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+span{
+	align-items: center;
+	float: left;
+	margin: 10px 15px 10px 300px;
+	padding: 10px;
+	
+	
+}
+	
+#container{
+	width:800px; height: 3500px;
+	background-color:rgba(255,255,255,.75); 
+	margin: auto
+}
