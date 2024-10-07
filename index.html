@@ -15,9 +15,37 @@ table, th, td {
 </head>
 
 <body>
+	
 <div id="container">
+	
+	<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#gallery">Gallery</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#contact">Contact</a></li>
+  
+</ul>
+	
 	<h1>Mythical Creatures from Around the World</h1>
 	<span style="font-size:200px;">&#128506;</span>
+	
+	<div style="display:none;">
+<img id="apophis" width="220" height="277" alt src="Images/apophis.jpg">
+		
+</div>
+
+<canvas id="myCanvas" width="240" height="297" style="border:1px solid black;">
+</canvas>
+	
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+const image = document.getElementById("apophis");
+
+image.addEventListener("load", (e) => {
+  ctx.drawImage(image, 5, 5, 230, 285);
+});
+</script>
 	
 	<table style="width:100%">
   <tr>
@@ -124,6 +152,19 @@ table, th, td {
 			<dd>- A reptilian creature with the head of a woman and the body of a snake.</dd>
 	
 	</dl>
+	
+	<p><b>What is your favorite Pantheon?</b></p>
+
+<form action="/action_page.php">
+  <label for="pantheon">Choose a Pantheon:</label>
+  <select id="pantheon" name="pantheon">
+    <option value="greek">Greek</option>
+    <option value="norse">Norse</option>
+    <option value="egyptain">Egyptain</option>
+    <option value="japanese">Japanese</option>
+  </select>
+  <input type="submit">
+</form>
 	
 	<p>Dragons</p>
 

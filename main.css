@@ -58,7 +58,66 @@ span{
 }
 	
 #container{
-	width:800px; height: 3500px;
+	width:800px; height: 3800px;
 	background-color:rgba(255,255,255,.75); 
 	margin: auto
+}
+ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  font-family: "Baskerville Old Face";
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgba(0,128,255,0.50);
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color:#333;
+  font-family: "Baskerville Old Face";
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: rgba(0,128,255,1.00);
+}
+button[type=button], input[type=submit], input[type=reset] {
+  background-color:#333;
+  font-family: "Baskerville Old Face";
+  font-size: 15px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}button[type=button]:hover {
+  background-color: rgba(0,128,255,1.00);
+}
+input[type=text], select, textarea {
+  font-family: "Baskerville Old Face";
+  font-size: 15px;
+  width: 20%;
+  padding: 12px;
+  border: 1px solid rgba rgba(0,0,0,1.00);
+  border-radius: 4px;
+  resize: vertical;
 }
