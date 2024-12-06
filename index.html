@@ -10,9 +10,8 @@ table, th, td {
 }
 </style>
 	<link href="main.css" rel="stylesheet" type="text/css">
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script> 
 $(document).ready(function(){
   $("#flip").click(function(){
@@ -27,11 +26,9 @@ $(document).ready(function(){
  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	
-	
-<title>Mythical Creatures</title>
-	
-
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mythical Creatures</title>
 </head>
 
 <body>
@@ -40,12 +37,14 @@ $(document).ready(function(){
 	
 	<ul>
   <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#gallery">Gallery</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="#greek">Greek</a></li>
+  <li><a href="#norse">Norse</a></li>
+  <li><a href="#egyptian">Egyptian</a></li>
+		<li><a href="#japanese">Japanese</a></li>
+  <li><a href="#about">History</a></li>
   
 </ul>
-	<h1>Mythical Creatures from Around the World</h1>
+	<h1 class="text-center text-capitalize">Mythical Creatures from Around the World</h1>
 	<span style="font-size:200px;">&#128506;</span>
 	
 	<div style="display:none;">
@@ -68,7 +67,9 @@ image.addEventListener("load", (e) => {
 });
 </script>
 
-<div id="flip">Table of Content</div>
+<div id="flip">
+  <div class="container-fluid"></div>
+  Table of Content</div>
 <div id="panel"><table style="width:100%">
   <tr>
     <th>Greek</th>
@@ -107,12 +108,12 @@ image.addEventListener("load", (e) => {
 	  <td>Nure-onna</td>
   </tr>
 </table>
-	</div>
+  </div>
 <div class="flex-container">
   <div class="makeMeStack" style="flex-grow: 2"><img src="Images/gorgons.jpg" alt="Gorgons" width="200px"></div>
   <div class="makeMeStack" style="flex-grow: 1"><img src="Images/chimera.jpg" alt="Chimera" width="255px"></div>
   <div style="flex-grow: 2" > <p>When talking about mythology what better place to start then with Greek mythology. Not only known for mythical creature like gorgons and harpies, but dragons also play a big role in Greek mythology. Like is the story of Herakles (or Heracles as most would know him as) and his twelve labors, one of which was to slay the Hydra, a nine-headed dragon which haunted the swamps of Lerna. Another great dragon was the Colchian Dragon which was a giant serpent that guarded the Golden Fleece in the sacred grove of Ares in Kolkhis, from the tale of Jason and the Argonauts. In both these stories we have our heroes slay a mighty dragon to receive a prize for their efforts.  </p></div>
-    </div>
+  </div>
 
 	<h2>Greek</h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aznss7QEnWk?si=t7nc-2oJCFwrmnoT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -144,7 +145,7 @@ image.addEventListener("load", (e) => {
 		<dd>- The giant wolf of Ragnarök</dd>
 	<dt>Kelpie</dt>
 		<dd>- Is a shape-shifting spirit, described as a grey or white horse-like creature, able to adopt human form.</dd>
-	</dl>
+  </dl>
 
 		<h2>Egyptain</h2>
 	
@@ -161,7 +162,7 @@ image.addEventListener("load", (e) => {
 		<dd>- A demon of chaos, who had the form of a serpent and, as the foe of the sun god, Re.</dd>
 	<dt>Bennu</dt>
 		<dd>- Depicted as a heron or a phoenix, that represents creation, rebirth, and the cyclical nature of life and death.</dd>
-	</dl>
+  </dl>
 	
 	<h2>Japanese</h2>
 	
@@ -199,6 +200,6 @@ image.addEventListener("load", (e) => {
 <p id="demo" style="display:none">What do you think of when you think “Dragon”? A large beast with wings? A scaly monster that’ll eat you as soon as it looks at you. What if I told you dragons are more than a creature that lurks in cave and guards large piles of gold. The dragon has been around for a long time and appeared in texts all around the world. Let’s take a deep dive into how dragons have influenced ancient culture and modern storytelling.</p>
 
 <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Here for More!</button>
-	</div>
+</div>
 </body>
 </html>
